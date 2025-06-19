@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="The Musical Playlist" />
+
+    <EditText
+        android:id="@+id/sgTitle"
+        android:layout_width="356dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter the song title"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/artName"
+        android:layout_width="354dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter The Artist's Name"
+        android:inputType="text"
+        android:text="" />
+
+    <RadioGroup
+        android:id="@+id/rdoGroupRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/rdoRating1" android:text="1" android:minWidth="48dp" android:minHeight="48dp" android:layout_height="48dp" android:layout_width="match_parent"/>
+        <RadioButton android:id="@+id/rdoRating2" android:text="2" android:minWidth="48dp" android:minHeight="48dp" android:layout_height="48dp" android:layout_width="match_parent"/>
+        <RadioButton android:id="@+id/rdoRating3" android:text="3" android:minWidth="48dp" android:minHeight="48dp" android:layout_height="48dp" android:layout_width="match_parent"/>
+        <RadioButton android:id="@+id/rdoRating4" android:text="4" android:minWidth="48dp" android:minHeight="48dp" android:layout_height="48dp" android:layout_width="match_parent"/>
+        <RadioButton android:id="@+id/rdoRating5" android:text="5" android:minWidth="48dp" android:minHeight="48dp" android:layout_height="48dp" android:layout_width="match_parent"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/userComments"
+        android:layout_width="366dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter comment"
+        android:inputType="text"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnAddPlaylist"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Add Playlist" />
+
+    <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Go to Details" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Exit" />
+
+</LinearLayout>
